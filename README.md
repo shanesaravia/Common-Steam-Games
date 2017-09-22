@@ -15,5 +15,25 @@ Following these instructions will get the code up and running on your local mach
 [Python 3](https://www.python.org/)  
 [SteamApi](https://github.com/smiley/steamapi)  
 [Requests 2.18.4](http://docs.python-requests.org/en/master/)  
-[BeautifulSoup4 4.6.0](https://pypi.python.org/pypi/beautifulsoup4)  
+[Beautiful Soup 4.6.0](https://pypi.python.org/pypi/beautifulsoup4)  
 [Yaml 3.12](http://www.yaml.org/start.html)
+
+## Retrieving Steam API Key
+1. Navigate to https://steamcommunity.com/dev/apikey and login with steam credentials.
+2. Input a domain name and check the "I agree" box.
+3. Click Register. Your API key should now appear.
+
+## Example Config File
+```
+api_key: 123abc123abc123abc123abc
+users:
+	- steamID1
+	- steamID2
+	- steamID3
+```
+
+## Author
+**Shane Saravia**
+
+##License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/shanesaravia/Common-Steam-Games/blob/master/LICENSE) file for details
