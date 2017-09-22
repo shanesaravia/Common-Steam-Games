@@ -12,8 +12,8 @@ Following these instructions will get the code up and running on your local mach
 5. Run steamApp.py and it will print out your common mulitplayer steam games. Enjoy!
 
 ## Dependencies
-[Python 3](https://www.python.org/)
-[SteamApi](https://github.com/smiley/steamapi)
-[Requests 2.18.4](http://docs.python-requests.org/en/master/)
-[BeautifulSoup4 4.6.0](https://pypi.python.org/pypi/beautifulsoup4)
+[Python 3](https://www.python.org/)  
+[SteamApi](https://github.com/smiley/steamapi)  
+[Requests 2.18.4](http://docs.python-requests.org/en/master/)  
+[BeautifulSoup4 4.6.0](https://pypi.python.org/pypi/beautifulsoup4)  
 [Yaml 3.12](http://www.yaml.org/start.html)
