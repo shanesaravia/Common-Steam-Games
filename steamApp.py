@@ -5,8 +5,8 @@ import yaml
 import os
 from functools import reduce
 
-class Configs(object):
 
+class Configs(object):
 
     def config(self):
         """ Returns Config File """
@@ -21,7 +21,6 @@ class Configs(object):
 
 
 class SteamGet(Configs):
-
 
     def __init__(self):
         pass
@@ -42,6 +41,7 @@ class SteamGet(Configs):
     def doReduce(self, config):
         """Compares games and returns a list of common games"""
         return list(reduce(self.compareGames, self.masterList(config['users'])))
+
 
 class GameType(SteamGet):
 
@@ -82,9 +82,6 @@ class GameType(SteamGet):
             # If r.history blank, no redirects, try regular page.
             return self.noCheck(gameID, payload, cookie, r)
 
-
-
-
     def ageCheck(self, gameID, payload, cookie, r):
         """Returns True for game that requires an age check."""
         resp = self.session.post('http://store.steampowered.com/agecheck/app/{}/'.format(gameID), data=payload, cookies=cookie)
@@ -110,6 +107,7 @@ class GameType(SteamGet):
         for i in playTypes:
             if i.text in self.types:
                 return True
+
 
 class Main(GameType):
 
